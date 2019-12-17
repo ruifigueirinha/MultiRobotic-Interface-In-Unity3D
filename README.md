@@ -1,1 +1,3 @@
 MultiRobotic Interface In Unity3D
+
+This project studies the capabilities of the Unity3D game engine to implement a user interface with multiple robots running ROS with DDS layer to manage communications. It makes use of ROSSharp (https://github.com/siemens/ros-sharp) and DDS VortexOpenSplice from ADLinkTech. Since this project is still in active development it is far from a complete product. This project is still considered a proof of concept that we can integrate all this into the Unity game engine. 
