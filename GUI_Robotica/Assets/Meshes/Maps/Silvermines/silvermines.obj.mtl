@@ -1,0 +1,21 @@
+# This file was created by OSM2World 0.2.0 - http://osm2world.org
+
+
+newmtl WATER_0
+Ns 92.156863
+Ka 0.0 0.0 0.5019608
+Kd 0.0 0.0 0.5019608
+Ks 0,000000 0,000000 0,000000
+Ke 0,000000 0,000000 0,000000
+Ni 1
+illum 2
+
+newmtl TERRAIN_DEFAULT_0
+Ns 92.156863
+Ka 0.0 0.5019608 0.0
+Kd 0.0 0.5019608 0.0
+Ks 0,000000 0,000000 0,000000
+Ke 0,000000 0,000000 0,000000
+Ni 1
+illum 2
+

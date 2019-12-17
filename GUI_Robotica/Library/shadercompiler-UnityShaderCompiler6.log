@@ -1,0 +1,16 @@
+Base path: '/home/rui/Unity/Hub/Editor/2019.2.15f1/Editor/Data', plugins path '/home/rui/Unity/Hub/Editor/2019.2.15f1/Editor/Data/PlaybackEngines'
+Cmd: initializeCompiler
+Cmd: compileComputeKernel
+  api=15 insize=1226 outsize=2186 ok=1
+Cmd: compileComputeKernel
+  api=15 insize=11176 outsize=18282 ok=1
+Cmd: compileComputeKernel
+  api=18 insize=5032 outsize=38014 ok=1
+Cmd: compileComputeKernel
+  api=15 insize=18731 outsize=16408 ok=1
+Cmd: compileComputeKernel
+  api=15 insize=18731 outsize=25702 ok=1
+Cmd: compileComputeKernel
+  api=15 insize=2120 outsize=2096 ok=1
+
+Quitting shader compiler process
