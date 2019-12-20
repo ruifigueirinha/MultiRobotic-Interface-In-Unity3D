@@ -20,7 +20,7 @@ public class RobotBase : MonoBehaviour
     
     
     // Start is called before the first frame update
-    void Awake()
+    public virtual void Awake()
     {
         robot = gameObject;
         materials = gameObject.GetComponent<Renderer>().materials;
@@ -28,13 +28,13 @@ public class RobotBase : MonoBehaviour
         highlightShader = Shader.Find("Outlined/UltimateOutline");
     }
 
-    private void RobotSelected() // metodo que corre quando o robot e selecionado
+    public virtual void RobotSelected() // metodo que corre quando o robot e selecionado
     { 
         AssignOutlineMaterials();
         //Debug.Log("Robot Selected");
     }
 
-    private void RobotDeselected() // metodo que corre quando o robot e selecionado
+    public virtual void RobotDeselected() // metodo que corre quando o robot e selecionado
     {
         AssignDefaultMaterials();
         //Debug.Log("Robot Deselected");

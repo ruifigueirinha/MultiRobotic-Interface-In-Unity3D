@@ -9,39 +9,15 @@ public class PointCloudCustomDropdown : CustomDropdown
     {
         switch (index)
         {
-            case 0:
-                if (pointCloudManager != null)
+            case 0: // Open File
+                if (pointCloudManager == null)
                 {
-                    Debug.Log("Game object is instantiated");
+                    Debug.Log("Instantiating PCL Manager");
                 }
-                else 
-                {
-                    Debug.Log("Game object is not instantiated, instantiating.....");
-                    pointCloudManager = Instantiate(pointCloudManagerPrefab);
-                    pointCloudManager.GetComponent<PointCloudManager>().OpenFileExplorer();
-                }
+                pointCloudManager = Instantiate(pointCloudManagerPrefab);
+                pointCloudManager.GetComponent<PointCloudManager>().OpenFileExplorer();
                 break;
-            case 1:
-                if (pointCloudManager != null)
-                {
-                    Debug.Log("Game object is instantiated");
-                }
-                else
-                {
-                    Debug.Log("Game object is not instantiated, instantiating.....");
-                    pointCloudManager = Instantiate(pointCloudManagerPrefab);
-                }
-                break;
-            case 2:
-                if (pointCloudManager != null)
-                {
-                    Debug.Log("Game object is instantiated");
-                }
-                else
-                {
-                    Debug.Log("Game object is not instantiated, instantiating.....");
-                    pointCloudManager = Instantiate(pointCloudManagerPrefab);
-                }
+            case 1: // Options
                 break;
             default:
                 break;

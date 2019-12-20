@@ -7,6 +7,10 @@ using UnityEngine;
 
 public class FileCustomDropdown : CustomDropdown
 {
+
+    [SerializeField]
+    private GameObject pointCloudManagerPrefab;
+    private GameObject pointCloudManager;
     public GameObject QuitPanel;
     public override void ValueEvaluate(int index) 
     {
@@ -19,11 +23,17 @@ public class FileCustomDropdown : CustomDropdown
                 DownloadMap();
                 break;
             case 2:
-                Exit();
+                if (pointCloudManager == null)
+                {
+                    //UnityEngine.Debug.Log("Instantiating PCL Manager");
+                }
+                pointCloudManager = Instantiate(pointCloudManagerPrefab);
+                pointCloudManager.GetComponent<PointCloudManager>().OpenFileExplorer();
                 break;
             case 3:
                 break;
             case 4:
+                Exit();
                 break;
             default:
                 break;
@@ -38,6 +48,8 @@ public class FileCustomDropdown : CustomDropdown
             var fileContent = File.ReadAllBytes(path);
         }
     }
+
+
 
     private void DownloadMap()
     {

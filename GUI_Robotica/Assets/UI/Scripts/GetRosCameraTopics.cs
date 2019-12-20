@@ -25,7 +25,7 @@ public class GetRosCameraTopics : MonoBehaviour {
     public List<string> CimageList = new List<string>(); //lista de topicos de compressed image
 
     // Use this for initialization
-    void Start () {
+    void Awake () {
         ROS_connector = GameObject.FindGameObjectWithTag("RosSensorInfo1");
         dropdown = gameObject.GetComponent<TMP_Dropdown>();
         try {

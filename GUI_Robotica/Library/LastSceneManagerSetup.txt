@@ -1,5 +1,5 @@
 sceneSetups:
-- path: Assets/Scenes/PCLViewer/pcl_viewer.unity
+- path: Assets/Scenes/MapboxScene/MapboxScene.unity
   isLoaded: 1
   isActive: 1
   isSubScene: 0
